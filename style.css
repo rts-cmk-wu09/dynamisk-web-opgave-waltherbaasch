@@ -1,0 +1,18 @@
+
+*{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.services{
+    display: flex;
+}
+.hero__kort {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+   height: 537px;
+   width: 741px;
+  }

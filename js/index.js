@@ -16,12 +16,22 @@ document.addEventListener("DOMContentLoaded", function() {
 let hero__section = document.querySelector(".hero");
 
 let hero__top = document.createElement("nav");
-hero__top.setAttribute("class", "hero__nav");
-let hero__img = document.createElement("img");
-hero__img.setAttribute("class", "hero__img");
-hero__img.src = hero.image;
-let hero__kort = document.createElement("div");
-hero__kort.setAttribute("class","hero__card");
+hero__top.setAttribute("class", "hero__main");
+//let hero__img = document.createElement("img");
+//hero__img.setAttribute("class", "hero__img");
+//hero__img.src = hero.image;
+//let hero__kort = document.createElement("div");
+//hero__kort.setAttribute("class","hero__card");
+
+
+
+hero__section.innerHTML = `
+<nav class="hero__top"></nav>
+<img src="${hero.image}" alt ="${hero.headline}">
+    <div class="hero__kort">
+    <h1>${hero.headline}</h1>
+    <p>${hero.copy} </p>
+    </div> `;
 
 let services_section = document.querySelector(".services");
 services.forEach((service) => {
@@ -44,9 +54,7 @@ services.forEach((service) => {
     services_section.append(card);
 });
 
-let services__card ={
-    display: flex;
-}
+ 
 
 
 
