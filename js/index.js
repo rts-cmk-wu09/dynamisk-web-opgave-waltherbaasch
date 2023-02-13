@@ -28,5 +28,12 @@ services.forEach((service) => {
     let card = document.createElement("section");
     card.setAttribute("class", "services__card");
     let billede = document.createElement("img");
-    let title = 
+    let title = document.createElement("h2");
+    let kort_tekst = document.createElement("p");
+    let kort_link = document.createElement("a");
+
+    billede.src = service.illustration
+    title.textContent = service.headline;
+    
+
 
