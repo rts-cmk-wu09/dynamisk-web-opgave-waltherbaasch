@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 //dog__head.append(favicon);
 let hero__section = document.querySelector(".hero");
 
-let hero__top = document.createElement(".nav");
+let hero__top = document.createElement("nav");
 hero__top.setAttribute("class", "hero__nav");
 let hero__img = document.createElement("img");
 hero__img.setAttribute("class", "hero__img");
@@ -34,6 +34,19 @@ services.forEach((service) => {
 
     billede.src = service.illustration
     title.textContent = service.headline;
-    
+    kort_tekst.textContent = service.text;
+    kort_link.textContent = service.linktext;
+
+    card.append(billede);
+    card.append(title);
+    card.append(kort_tekst);
+    card.append(kort_link);
+    services_section.append(card);
+});
+
+let services__card ={
+    display: flex;
+}
+
 
 
