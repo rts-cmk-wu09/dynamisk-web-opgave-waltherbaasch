@@ -53,8 +53,44 @@ services.forEach((service) => {
     card.append(kort_link);
     services_section.append(card);
 });
+const facilitiesContainer = document.createElement('div');
+facilitiesContainer.className = 'facilities';
+facilitiesContainer.innerHTML = `
+  <h2>${facilities.headline}</h2>
+  <ul>
+    ${facilities.options.map(option => `
+      <li>
+        <img src="${option.icon}" alt="">
+        <h3>${option.headline}</h3>
+        <p>${option.text}</p>
+      </li>
+    `).join('')}
+  </ul>
+`;
 
- 
+// Append the facilities element to the document body
+document.body.appendChild(facilitiesContainer);
 
+const sitesContainer = document.createElement('div');
+sitesContainer.className = 'sites';
+sitesContainer.innerHTML = `
+  <div class="sites-header">
+    <h2>${sites.headline}</h2>
+    <p>${sites.text}</p>
+    <button><img src="${sites.btnicon}" alt=""></button>
+  </div>
+  <ul>
+    ${sites.places.map(place => `
+      <li>
+        <img src="${place.img}" alt="${place.name}">
+        <h3>${place.name}</h3>
+        <p>${place.city}</p>
+      </li>
+    `).join('')}
+  </ul>
+`;
+
+// Append the sites element to the document body
+document.body.appendChild(sitesContainer);
 
 

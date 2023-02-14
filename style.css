@@ -13,6 +13,7 @@
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 20px;
-   height: 537px;
-   width: 741px;
+  }
+  .facilities{
+    display: flex;
   }
