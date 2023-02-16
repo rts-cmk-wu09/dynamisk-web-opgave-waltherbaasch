@@ -25,6 +25,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 40px;
   }
   
   .facilities h2 {
@@ -55,55 +56,63 @@
   .sites {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+  }
+  
+  .sites ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .sites li {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+    max-width: 250px;
+  }
+  
+  .sites li img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .sites li h3,
+  .sites li p {
+    margin: 0;
   }
   
   .sites-header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 40px;
-  }
-  
-  .sites-header h2 {
-    margin-bottom: 10px;
-  }
-  
-  .sites-header p {
+    text-align: center;
     margin-bottom: 20px;
+  }
+  
+  .sites-header h2,
+  .sites-header p {
+    margin: 0;
   }
   
   .sites-header button {
-    background: none;
-    border: none;
-    cursor: pointer;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
   }
   
-  .sites ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .sites li {
-    width: 250px;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .sites li img {
-    margin-bottom: 20px;
-  }
   
   .advantages {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 40px;
   }
   
   .advantages ul {
@@ -126,4 +135,23 @@
   .advantages li img {
     margin-bottom: 20px;
   }
+  .facilities li button,
+  .sites-header button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .advantages li button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+    
   
