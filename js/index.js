@@ -111,12 +111,52 @@ advantages.forEach((advantage) => {
 
 advantagesContainer.appendChild(advantagesList);
 
-footerData.sitemap.forEach(section => {
-    console.log(section.header);
-    section.links.forEach(link => {
-      console.log(link.text);
-    });
+// Create the footer container element
+const footerContainer = document.createElement('footer');
+footerContainer.className = 'footer';
+
+// Create the footer headline element
+const footerHeadline = document.createElement('h2');
+footerHeadline.textContent = footerData.headline;
+footerContainer.appendChild(footerHeadline);
+
+// Create the footer text element
+const footerText = document.createElement('p');
+footerText.textContent = footerData.text;
+footerContainer.appendChild(footerText);
+
+// Create the sitemap container element
+const sitemapContainer = document.createElement('div');
+sitemapContainer.className = 'sitemap';
+footerContainer.appendChild(sitemapContainer);
+
+// Create the sitemap items
+footerData.sitemap.forEach((sitemapItem) => {
+  // Create the sitemap header
+  const sitemapHeader = document.createElement('h3');
+  sitemapHeader.textContent = sitemapItem.header;
+  sitemapContainer.appendChild(sitemapHeader);
+
+  // Create the sitemap links
+  const sitemapLinks = document.createElement('ul');
+  sitemapItem.links.forEach((link) => {
+    const sitemapLink = document.createElement('li');
+    const sitemapLinkText = document.createElement('a');
+    sitemapLinkText.textContent = link.text;
+    sitemapLink.appendChild(sitemapLinkText);
+    sitemapLinks.appendChild(sitemapLink);
   });
+  sitemapContainer.appendChild(sitemapLinks);
+});
+
+// Create the rights reserved message
+const rightsMessage = document.createElement('p');
+rightsMessage.textContent = footerData.sitemap[3].header;
+footerContainer.appendChild(rightsMessage);
+
+// Append the footer element to the document body
+document.body.appendChild(footerContainer);
+
   
 
 
