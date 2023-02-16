@@ -99,11 +99,11 @@ let advantages = [
 
 let footerData = {
     headline: "Easy Camper" ,
-text: "when passion meets comfort" ,
+text: "when passion meets comfort",
 sitemap: [
         {
             header: "discover the network",
-         links: [
+            links: [
                 {
                     text: "where to shop",
 
@@ -118,13 +118,14 @@ sitemap: [
                 },
 
                                                         {
-                    text: "about us",
+                    text: "about us"
 
                 },
 
 
             ]
         },
+        { 
         header: "become a manager",
          links: [
                 {
@@ -136,7 +137,7 @@ sitemap: [
 
                 },
                                     {
-                    text: "are you a guide?",
+                    text: "are you a guide?"
 
                 },
 
@@ -144,3 +145,54 @@ sitemap: [
 
             ]
         },
+        {
+            header: "assistance",
+         links: [
+                {
+                    text: "support center",
+
+                },
+                {
+                    text: "FAQs",
+
+                },
+                                    {
+                    text: "Cancellation Options",
+
+                },
+
+                                                        {
+                    text: "Reliability and Sequrity"
+
+                },
+
+
+            ]
+        },
+        {
+            header: "Eazycamper, All rights reserved",
+         links: [
+                {
+                    text: "About",
+
+                },
+                {
+                    text: "sitemap",
+
+                },
+                                    {
+                    text: "terms",
+
+                },
+
+                                                        {
+                    text: "privacy policy"
+
+                },
+
+
+            ]
+        
+        },
+    ]
+}

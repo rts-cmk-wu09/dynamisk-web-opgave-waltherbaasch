@@ -111,7 +111,12 @@ advantages.forEach((advantage) => {
 
 advantagesContainer.appendChild(advantagesList);
 
-// Append the advantages element to the document body
-document.body.appendChild(advantagesContainer);
+footerData.sitemap.forEach(section => {
+    console.log(section.header);
+    section.links.forEach(link => {
+      console.log(link.text);
+    });
+  });
+  
 
 

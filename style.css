@@ -154,4 +154,24 @@
     margin-top: 20px;
   }
     
+  /* Set the position to absolute and place the footer at the bottom */
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px; /* Set the height of the footer */
+  }
+  
+  /* Set a background color and text color for the footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Add padding and center the text within the footer */
+  footer {
+    padding: 20px;
+    text-align: center;
+  }
   
